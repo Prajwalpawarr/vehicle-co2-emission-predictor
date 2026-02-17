@@ -1,0 +1,88 @@
+<!--&lt;!&ndash; templates/result.html &ndash;&gt;-->
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Result</title>-->
+<!--    <style>-->
+<!--        .container {-->
+<!--            display: flex;-->
+<!--            justify-content: center;-->
+<!--            align-items: center;-->
+<!--            height: 100vh;-->
+<!--            text-align: center;-->
+<!--        }-->
+<!--        .result-content {-->
+<!--            max-width: 400px;-->
+<!--            width: 100%;-->
+<!--            padding: 20px;-->
+<!--            border: 1px solid #ccc;-->
+<!--            border-radius: 5px;-->
+<!--        }-->
+<!--        a {-->
+<!--            display: block;-->
+<!--            margin-top: 20px;-->
+<!--            text-align: center;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <div class="container">-->
+<!--        <div class="result-content">-->
+<!--            <h1>Result</h1>-->
+<!--            <p>The predicted CO2 emissions are: {{ prediction }} g/km</p>-->
+<!--            <a href="/">Go back</a>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+<!-- templates/result.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body {
+            background-image: url("/static/back2.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .result-content {
+            max-width: 400px;
+            width: 100%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+        a {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="result-content">
+            <h1>Result</h1>
+            <p>The predicted CO2 emissions are: {{ prediction }} g/km</p>
+            <a href="/">Go back</a>
+        </div>
+    </div>
+</body>
+</html>
